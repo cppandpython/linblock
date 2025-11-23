@@ -14,16 +14,16 @@ linblock — Lock the system
 
 ## 🚀 Features
 
-- ✅ Lock 
+- ✅ Full blocking
 - 📦 compiled
 
 <br>
 
 ## 🧰 Installation
 
-```bash
 [Download linblock](https://github.com/cppandpython/linblock/blob/main/linblock)
 
+```bash
 # Launch
 ./linblock
 ```
@@ -46,17 +46,16 @@ linblock — Блокирует систему
 
 ## 🚀 Функции
 
-- ✅ Блокирует 
+- ✅ Полная блокировка 
 - 📦 скомпилировано
 
 <br>
 
 ## 🧰 Установка
 
-```bash
-# Клонируй репозиторий
 [Скачать linblock](https://github.com/cppandpython/linblock/blob/main/linblock)
 
+```bash
 # Запуск
 ./linblock
 ```
