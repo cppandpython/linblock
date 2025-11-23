@@ -1,3 +1,16 @@
+// CREATOR 
+// GitHub https://github.com/cppandpython
+// NAME: Vladislav 
+// SURNAME: Khudash  
+// AGE: 17
+
+// DATE: 23.11.2025
+// APP: BLOCK_LINUX
+// TYPE: BLOCK_OS
+// VERSION: LATEST
+// PLATFORM: ANY
+
+
 #include <string>
 #include <iostream>
 #include <fstream>
