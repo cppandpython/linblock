@@ -25,6 +25,7 @@ linblock — Lock the system
 
 ```bash
 # Launch
+chmod +x linblock
 ./linblock
 ```
 
@@ -57,6 +58,7 @@ linblock — Блокирует систему
 
 ```bash
 # Запуск
+chmod +x linblock
 ./linblock
 ```
 
