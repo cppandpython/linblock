@@ -15,7 +15,7 @@ linblock — Lock the system
 ## 🚀 Features
 
 - ✅ Lock 
-- 📦 Built-in libraries only
+- 📦 compiled
 
 <br>
 
@@ -23,10 +23,10 @@ linblock — Lock the system
 
 ```bash
 # Clone repository
-git clone https://github.com/cpythonkiller/linlocker.git
+git clone https://github.com/cppandpython/linblock.git
 
 # Launch
-python linlocker.py
+./linblock
 ```
 
 <br><br>
@@ -48,7 +48,7 @@ linblock — Блокирует систему
 ## 🚀 Функции
 
 - ✅ Блокирует 
-- 📦 Только встроенные библиотеки
+- 📦 скомпилировано
 
 <br>
 
@@ -56,10 +56,10 @@ linblock — Блокирует систему
 
 ```bash
 # Клонируй репозиторий
-git clone https://github.com/cpythonkiller/linlocker.git
+git clone https://github.com/cppandpython/linblock.git
 
 # Запуск
-python linlocker.py
+./linblock
 ```
 
 <br><br>
