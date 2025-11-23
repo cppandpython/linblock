@@ -22,8 +22,7 @@ linblock — Lock the system
 ## 🧰 Installation
 
 ```bash
-# Clone repository
-git clone https://github.com/cppandpython/linblock.git
+[Download linblock](https://github.com/cppandpython/linblock/blob/main/linblock)
 
 # Launch
 ./linblock
@@ -56,7 +55,7 @@ linblock — Блокирует систему
 
 ```bash
 # Клонируй репозиторий
-git clone https://github.com/cppandpython/linblock.git
+[Скачать linblock](https://github.com/cppandpython/linblock/blob/main/linblock)
 
 # Запуск
 ./linblock
