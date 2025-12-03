@@ -169,11 +169,6 @@ Your system is completely locked
 
 
 int main(int argc, char *argv[]) {
-    if (!fs::exists(PATH_LINBLOCK)) {
-        init(argv[0]);
-    } else {
-        output();
-    }
-
+    (!fs::exists(PATH_LINBLOCK))? init(argv[0]) : output();
     return 0;
 }
