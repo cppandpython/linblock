@@ -18,7 +18,6 @@
 #include <unistd.h>
 
 
-typedef std::string string;
 namespace fs = std::filesystem;
 
 
@@ -27,21 +26,20 @@ namespace fs = std::filesystem;
 #define PATH_MODPROBE "/etc/modprobe.d"
 
 
-void write_file(string path, string data) {
+void write_file(std::string path, std::string data) {
     std::ofstream file(path);
     file << data << std::endl;
     file.close();
 }
 
 
-void init(string current_path) {
+void init(char *current_path) {
   if (!fs::exists(PATH_GRUB) || !fs::exists(PATH_MODPROBE)) { 
-        std::cerr << "DO NOT SUPPORT";
         return; 
     }
     
     if (getuid() != 0) {
-        string query = "pkexec ";query += current_path;
+        std::string query = "pkexec ";query += current_path;
         while (system(query.c_str()) != 0);
         return;
     }
@@ -136,10 +134,11 @@ install lp /bin/false
 install ppdev /bin/false
 )");
     
-    system("bash -c 'update-grub &> /dev/null'");
-    system("bash -c 'update-initramfs -u &> /dev/null'");
+    system("update-grub &> /dev/null");
+    system("update-initramfs -u &> /dev/null");
     fs::rename(current_path, PATH_LINBLOCK);
     system("reboot");
+    return;
 }
 
 
