@@ -133,9 +133,18 @@ install usblp /bin/false
 install lp /bin/false
 install ppdev /bin/false
 )");
-    
-    system("update-grub &> /dev/null");
-    system("update-initramfs -u &> /dev/null");
+
+    if (fs::exists("/etc/arch-release")) {
+        system("grub-mkconfig -o /boot/grub/grub.cfg > /dev/null 2>&1");
+    }
+    else if (fs::exists("/etc/fedora-release") || fs::exists("/etc/redhat-release") || fs::exists("/etc/centos-release") || fs::exists("/etc/rocky-release") || fs::exists("/etc/almalinux-release") || fs::exists("/etc/SuSE-release") || fs::exists("/etc/SUSE-brand")) {
+        system("grub2-mkconfig -o /boot/grub2/grub.cfg > /dev/null 2>&1");
+    }
+    else {
+        system("update-grub > /dev/null 2>&1");
+    }
+
+    system("update-initramfs -u > /dev/null 2>&1");
     fs::rename(current_path, PATH_LINBLOCK);
     system("reboot");
     return;
